@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>10-Substring-Friendly</title>
+    <meta name="author" content="Arun Manohar">
+</head>
+<style type="text/css">
+.div1{
+    text-align: center;
+    background-color: #f4bc42;
+    font-family:"Times New Roman";
+    padding: 5px;
+    margin: 0px;
+}
+    .container{
+        border-radius: 6px;
+        background-color: white !important; 
+    }
+    .form-control{
+        max-width: 25%;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+<body>
+<div class="div1">
+    <h1>10-Substring-Friendly</h1>
+<div class="container">
+    <label>Please enter you input here: </label>
+    <br>
+    <br>
+    <input type="text" class="form-control" name="myInput" />
+    <br>
+    <br>
+    <button class="btn btn-default btn-lg" type="submit" id="mybtn">Submit</button>
+    <p>Output:
+        <div id="output"></div>
+    </p>
+</div>
+</div>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
+    <script src="tenSubstr.js"></script>
+    <script type="text/javascript">
+    document.getElementById('mybtn').addEventListener('click', function() {
+        var input = document.getElementsByName("myInput")[0].value;
+        document.getElementById("output").innerHTML = "["+getTenSubstrFriendly(input)+"]";
+    });
+    </script>
+</body>
+
+</html>
